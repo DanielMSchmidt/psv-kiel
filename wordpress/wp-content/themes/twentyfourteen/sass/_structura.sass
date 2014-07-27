@@ -1,0 +1,699 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  vertical-align: baseline
+  background: transparent
+
+body
+  line-height: 1
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+  clear: both
+
+blockquote
+  quotes: none
+  &:before, &:after
+    content: ''
+    content: none
+
+del
+  text-decoration: line-through
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+a img
+  border: none
+
+.clearfix:after
+
+  content: "."
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden
+
+*
+  + html .clearfix
+
+    display: inline-block
+  html .clearfix
+
+    height: 1%
+
+body
+  font-family: Arial, Helvetica, sans-serif
+  background: #3c352f image-url("bg_body.jpg")
+  font-size: 12px
+  color: #86807b
+
+#header
+  position: relative
+  color: #fff
+
+#wrapper
+  margin: 0 auto
+  width: 980px
+
+#slider
+  background-color: #fff !important
+  border-left: 5px solid #fff
+  border-right: 5px solid #fff
+  border-bottom: 2px solid #fff
+
+a
+  color: #4c88bd
+
+#slider
+  .nivo-directionNav
+    .nivo-prevNav
+      height: 31px
+      width: 14px
+      position: absolute
+      left: -19px
+      background-image: url(./images/slider-prev.png)
+      background-repeat: no-repeat
+      text-indent: 1000px
+      overflow: hidden
+    .nivo-nextNav
+      height: 31px
+      width: 14px
+      position: absolute
+      left: 975px
+      background-image: url(./images/slider-next.png)
+      background-repeat: no-repeat
+      text-indent: 1000px
+      overflow: hidden
+  .nivo-controlNav
+    position: absolute
+    bottom: 20px
+    left: 20px
+    a
+      background-color: #221d19
+      color: #fff
+      padding-top: 2px
+      text-align: center
+      width: 15px
+      height: 14px
+      display: inline-block
+      margin-right: 5px
+    .active
+      background-color: #2164a1
+
+img
+  &.alignleft
+    display: inline
+    float: left
+    margin: 4px 15px 0 0
+  &.alignright
+    display: inline
+    float: right
+    margin: 4px 0 0 15px
+  &.aligncenter
+    clear: both
+    display: block
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 10px
+
+.screen-reader-text
+  height: 0.1em
+  text-indent: -999em
+
+#headerimg h1
+  padding-top: 60px
+
+h1 a, .page h1 a, .post h1 a, h1 a:hover, .page h1 a:hover, .post h1 a:hover
+  font-size: 60px
+  font-family: 'Lobster', arial, serif
+  color: #fff
+  text-decoration: none
+
+#header-img
+  background: none repeat scroll 0 0 #FFFFFF
+  padding-left: 5px
+
+#metanav
+  position: absolute
+  right: 0px
+  top: 35px
+  ul li
+    display: inline
+    float: left
+    margin-right: 5px
+    text-align: center
+  li
+    a
+      color: #fff
+      margin-left: 10px
+      padding-top: 25px
+      text-decoration: none
+    &.rss a
+      background: transparent url(images/ico_rss.png) no-repeat top center
+    &.twitter a
+      background: transparent url(images/ico_twitter.png) no-repeat top center
+    &.youtube a
+      background: transparent url(images/ico_youtube.png) no-repeat top center
+    &.facebook a
+      background: transparent url(images/ico_fb.png) no-repeat top center
+    &.xing a
+      background: transparent url(images/ico_xing.png) no-repeat top center
+
+#nav, #secondnav
+  background-color: #221d19
+  border: 5px solid #fff
+  height: 32px
+  ul
+    li
+      display: inline
+      float: left
+      background-color: #221d19
+    display: block
+  li
+    border-right: 1px dashed #4e4a47
+    a
+      color: #fff
+      text-decoration: none
+      padding: 10px 20px 10px 20px
+      display: block
+      &:hover
+        background-color: #215f97
+    &.action-item a
+      padding: 0
+
+#site-description
+  margin: 20px 0 35px 0
+
+#teaser
+  margin-bottom: 15px
+  .box
+    float: left
+    width: 33.18888%
+    h2
+      background-color: #3c352f
+      -moz-border-radius-topleft: 5px
+      -moz-border-radius-topright: 5px
+      -moz-border-radius-bottomright: 0px
+      -moz-border-radius-bottomleft: 0px
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+      border-bottom-right-radius: 0px
+      border-bottom-left-radius: 0px
+      margin: 5px 0 0 5px
+      color: #fff
+      height: 60px
+      padding: 20px
+      font-size: 30px
+      font-family: 'Lobster', arial, serif
+    p
+      clear: both
+      display: block
+      color: #86807b
+      margin: 5px 15px 0 5px
+      line-height: 1.5em
+    img
+      margin-top: 0
+    a
+      margin-top: 20px
+      display: inline-block
+      color: #4c88bd
+      text-decoration: none
+      padding-top: 2px
+      padding-left: 15px
+      background-image: url(./images/ico_readmore.gif)
+      background-repeat: no-repeat
+      background-position: center left
+    h2 a
+      background: transparent none
+      color: #fff
+      margin: 0
+      padding: 0
+      &:hover
+        color: #4c88bd
+
+#main
+  clear: both
+  background-color: #fff
+
+#container
+  float: left
+  width: 655px
+
+.post
+  margin-bottom: 15px
+
+#content
+  margin-bottom: 15px
+  .post, .page
+    margin: 5px
+
+.entry-title
+  background-color: #3c352f
+  -moz-border-radius-topleft: 5px
+  -moz-border-radius-topright: 5px
+  -moz-border-radius-bottomright: 0px
+  -moz-border-radius-bottomleft: 0px
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+  border-bottom-right-radius: 0px
+  border-bottom-left-radius: 0px
+  color: #fff
+  padding: 20px
+  margin-bottom: 5px
+  font-size: 30px
+  font-family: 'Lobster', arial, serif
+
+h2.entry-title a
+  color: #fff
+  text-decoration: none
+
+.entry-meta
+  padding: 20px 20px 10px 20px
+  .meta-sep
+    margin: 0 5px
+
+.entry-content, .entry-summary
+  padding: 10px 20px 10px 20px
+  line-height: 1.5em
+
+.entry-content
+  a
+    color: #4c88bd
+    &:hover
+      color: #aca126
+  strong
+    font-weight: bold
+  ul, ol
+    margin: 30px
+  blockquote
+    color: #4c88bd
+    margin: 45px
+    font-size: 14px
+    quotes: "\201D" "\201C"
+    &:before
+      display: block
+      font-size: 36px
+      width: 50px
+      position: relative
+      top: 10px
+      content: open-quote
+      height: 0
+      margin-left: -15px
+  cite
+    margin: 30px
+
+.post p, .page p
+  margin-bottom: 10px
+
+.post a, .page a
+  color: #86807b
+  text-decoration: none
+
+.post a:hover, .page a:hover
+  color: #4c88bd
+
+.post
+  ul, ol
+    list-style-position: inside
+
+.page
+  ul, ol
+    list-style-position: inside
+
+.more-link
+  background: url(./images/ico_readmore.gif) no-repeat center left
+  display: block
+  margin: 25px 0 0 0
+  color: #4c88bd
+  text-decoration: none
+  padding-left: 15px
+
+.entry-utility
+  margin: 0 0 35px 20px
+  a
+    color: #7b7b7b
+    text-decoration: none
+    padding-left: 15px
+    background-image: url(./images/ico_readmore.gif)
+    background-repeat: no-repeat
+    background-position: center left
+    &:hover
+      color: #4c88bd
+  .cmd-number
+    color: #4c88bd
+
+#nav-below
+  padding: 0 0 50px 25px
+
+.single-attachment #nav-below
+  padding: 0 0 50px 0px
+
+#nav-below
+  a:hover
+    color: #4c88bd !important
+  .nav-previous a
+    float: left
+    color: #7b7b7b
+    text-decoration: none
+    padding-left: 15px
+    margin-right: 10px
+    background-image: url(./images/ico_prev.gif)
+    background-repeat: no-repeat
+    background-position: center left
+  .nav-next a
+    float: left
+    color: #7b7b7b
+    text-decoration: none
+    padding: 0 15px 0 0
+    background-image: url(./images/ico_readmore.gif)
+    background-repeat: no-repeat
+    background-position: center right
+
+#comments
+  ol
+    list-style-type: none
+  li
+    border-top: 1px solid #dad9d7
+    padding: 35px 0 20px 0
+    margin: 0 20px 0 25px
+  #comments-title
+    font-size: 14px
+    text-transform: uppercase
+    padding: 0 0 15px 25px
+    span
+      color: #215f97
+  .comment-author
+    float: left
+    color: #215f97
+    background-image: url(./images/comment_quote.gif)
+    background-repeat: no-repeat
+    background-position: center left
+    padding: 0 0 0 20px
+    margin: 0 0 0 25px
+    .fn
+      font-style: normal
+    .says
+      font-weight: bold
+  .comment-meta
+    float: left
+    a
+      color: #86807b
+      text-decoration: none
+  .comment-body
+    clear: both
+    display: block
+    padding: 20px 0 0 45px
+    line-height: 1.5em
+  .reply
+    display: none
+
+#respond
+  border-top: 1px solid #dad9d7
+  padding: 35px 0 20px 0
+  margin: 0 20px 0 25px
+  #reply-title
+    margin: 0 0 30px 0
+  .comment-notes
+    margin-bottom: 35px
+    line-height: 1.5em
+  .comment-form-author
+    float: left
+    width: 228px
+    margin-right: 6px
+    input
+      width: 210px
+  .comment-form-email
+    float: left
+    width: 340px
+    margin-right: 6px
+    input
+      width: 357px
+  .comment-form-url, .form-allowed-tags
+    display: none
+  .comment-form-comment
+    width: 600px
+    textarea
+      width: 591px
+  input[type=text], textarea
+    border: 2px solid #e3e3e3
+    padding: 7px
+    color: #b5b4b4
+    margin: 5px 0 15px 0
+  input[type=submit]
+    background-image: url(./images/bg_submit.jpg)
+    background-repeat: repeat-x
+    border: none
+    color: #fff
+    height: 28px
+    display: inline
+
+body.attachment
+  #container
+    width: 980px
+  #content
+    margin: 0 5px 0 5px
+  .page-title a
+    font-size: 18px
+    margin: 20px 0 0 20px
+    color: #86807b
+    text-decoration: none
+    display: block
+  .entry-meta a
+    color: #86807b
+    text-decoration: none
+    &:hover
+      color: #4c88bd
+
+.gallery
+  margin: 0 0 0 10px !important
+  .gallery-item
+    margin: 0 0 15px 15px !important
+    width: inherit !important
+    img
+      border: 5px solid #7b7b7b !important
+
+.entry-attachment img
+  border: 5px solid #7b7b7b !important
+
+#sidebar
+  float: right
+  width: 320px
+  margin: 5px 5px 0 0
+  color: #3c352f
+  a
+    color: #3c352f
+    text-decoration: none
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+  .blogroll a img
+    width: 20px
+    height: 20px
+  .widget-container
+    margin-bottom: 5px
+    ul
+      margin-top: 25px
+    li
+      border-bottom: 1px solid #d8d7d5
+      margin-top: 20px
+      padding: 0 0 20px 40px
+      background: url(./images/ico_readmore.gif) no-repeat 20px 1px
+      a
+        color: #3c352f
+        text-decoration: none
+        &:hover
+          color: #4c88bd
+  h3
+    background-color: #3c352f
+    -moz-border-radius-topleft: 5px
+    -moz-border-radius-topright: 5px
+    -moz-border-radius-bottomright: 0px
+    -moz-border-radius-bottomleft: 0px
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 0px
+    border-bottom-left-radius: 0px
+    color: #fff
+    padding: 20px 0 20px 20px
+    margin-bottom: 5px
+    font-size: 30px
+    font-family: 'Lobster', arial, serif
+  .widget_search
+    -moz-border-radius-topleft: 5px
+    -moz-border-radius-topright: 5px
+    -moz-border-radius-bottomright: 0px
+    -moz-border-radius-bottomleft: 0px
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 0px
+    border-bottom-left-radius: 0px
+    background-color: #3c352f
+    padding: 0 0 20px 20px
+    h3
+      margin-bottom: 0
+      padding-left: 0px
+      padding-bottom: 0px
+    input
+      background-color: #302c28
+      background-image: url(./images/bg_search.jpg)
+      background-repeat: no-repeat
+      background-position: right
+      color: #b3b3b3
+      margin: 0
+      border: 0
+      padding: 5px 30px 5px 5px
+      width: 240px
+      border-left: 1px dashed #595653
+      &#searchsubmit
+        background-color: #302C28
+        color: #225C8E
+        cursor: pointer
+        float: right
+        font-size: 0.1em
+        height: 25px
+        padding: 20px 0 2px
+        position: relative
+        right: 23px
+        width: 24px
+  .widget_tag_cloud div
+    padding: 25px 20px 25px 20px
+    border-bottom: 1px solid #d8d7d5
+
+#calendar_wrap
+  margin-left: 20px
+  margin-top: 25px
+  table
+    width: 250px
+  td
+    padding: 7px
+    width: 11px
+    height: 11px
+    text-align: center
+    &#prev
+      text-align: left
+  a
+    color: #000
+    text-decoration: none
+    &:hover
+      color: #4c88bd
+  #today
+    -moz-border-radius: 5px
+    -webkit-border-radius: 5px
+    border-radius: 5px
+    color: #fff
+    background-color: #4c88bd
+  caption
+    margin: 0
+    padding: 0 0 10px 0
+    color: #4c88bd
+    font-size: 18px
+    text-align: left
+  thead
+    color: #4c88bd
+
+
+
+#separator
+  background-image: url(./images/bg_separator.png)
+  height: 18px
+
+#footer
+  clear: both
+  height: 300px
+  color: #fff
+  background-color: #3a332e
+  background-image: url(./images/bg_footer.png)
+  background-repeat: repeat-x
+  background-position: top left
+  padding: 0 15px 0 25px
+  line-height: 1.5em
+  h3
+    font-size: 30px
+    font-family: 'Lobster', arial, serif
+    padding-bottom: 15px
+    border-bottom: 1px solid #251f1b
+  p
+    border-top: 1px solid #342e2a
+    padding-top: 15px
+  a
+    color: #b3b3b3
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  #aboutus
+    float: left
+    width: 64%
+    margin: 70px 0 0 0
+  #feed
+    float: right
+    width: 33%
+    padding: 70px 0 0 0
+    background-image: url(./images/twitter-bubble.png)
+    background-repeat: no-repeat
+    background-position: top right
+
+#site-info
+  background-image: url(./images/bg_copyright.png)
+  background-repeat: repeat-x
+  background-position: top left
+  padding: 38px 25px 15px 25px
+  background-color: #fff
+  color: #998d85
+  .copyright
+    float: right
+
+@media print
+  body
+    background: none !important
+  #wrapper
+    float: none !important
+    clear: both !important
+    display: block !important
+    position: relative !important
+  #header
+    border-bottom: 2pt solid #000
+    padding-bottom: 18pt
+  #colophon
+    border-top: 2pt solid #000
+  #site-title, #site-description
+    float: none
+    margin: 0
+    padding: 0
+    line-height: 1.4em
+  #site-title
+    font-size: 13pt
+  .entry-content
+    font-size: 14pt
+    line-height: 1.6em
+  .entry-title
+    font-size: 21pt
+  #access, #branding img, #respond, .comment-edit-link, .edit-link, .navigation, .page-link, .widget-area
+    display: none !important
+  #container, #header, #footer
+    width: 100%
+    margin: 0
+  #content, .one-column #content
+    width: 100%
+    margin: 24pt 0 0
+  .wp-caption p
+    font-size: 11pt
+  #site-info, #site-generator
+    float: none
+    width: auto
+  #colophon
+    width: auto
+  img#wpstats
+    display: none
+  #site-generator a
+    padding: 0
+    margin: 0
+  #entry-author-info
+    border: 1px solid #e7e7e7
+  #main
+    display: inline
+  .home .sticky
+    border: none
